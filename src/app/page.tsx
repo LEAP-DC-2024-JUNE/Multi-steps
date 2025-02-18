@@ -56,8 +56,7 @@ export default function Home() {
     setStep(step - 1);
   };
   console.log(formData);
-
-  const HandleInputChange = (event) => {
+  const HandleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
